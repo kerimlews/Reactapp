@@ -1,0 +1,1 @@
+export const TOGGLE_APP = 'containers/App/TOGGLE_APP';
