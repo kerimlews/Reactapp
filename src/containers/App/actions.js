@@ -2,9 +2,8 @@ import {
     TOGGLE_APP
 } from './contants';
 
-export function toggleApp(value) {
+export function toggleApp() {
     return {
-        type: TOGGLE_APP,
-        value
+        type: TOGGLE_APP
     }
 }

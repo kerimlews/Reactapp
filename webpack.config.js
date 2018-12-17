@@ -14,11 +14,11 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['es2015','react','stage-2']
+                    presets: ['@babel/preset-env', '@babel/preset-react']
                 }
             },
             {
-                test: /\.sass$/,
+                test: /\.scss$/,
                 loader: ['style-loader','css-loader','sass-loader'] 
             }
         ]

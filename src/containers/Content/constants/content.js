@@ -1,0 +1,1 @@
+export const TOGGLE = 'containers/Content/TOGGLE';
