@@ -29,8 +29,8 @@ export default function reducer(state = initialState, action) {
         case FETCH_MOVIES_FAIL:
             return {
                 ...state,
-                isLoading: true,
-                error: null
+                isLoading: false,
+                error: action.error
             }
         case SEARCH_MOVIES:
             return {

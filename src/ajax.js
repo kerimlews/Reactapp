@@ -16,7 +16,7 @@ function params (query) {
 function get(url, query) {
     return axios.get(URL(url), params(query))
         .then((response) => response.data.results)
-        .catch((err) => err);
+        .catch((err) => { throw err });
 }
 
 export default {

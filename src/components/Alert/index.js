@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 const Alert = ({ message }) => (
     <div className="alert alert-danger" role="alert">
-        {{message}}
+        {JSON.stringify(message)}
     </div>
 );
 
 Alert.propTypes = {
-    message: PropTypes.string.isRequired
+    message: PropTypes.object.isRequired
 }
 
 export default Alert;
